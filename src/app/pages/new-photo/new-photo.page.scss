@@ -1,0 +1,23 @@
+.imagePicker ion-img.image {
+    max-width: 50% !important;
+    width: calc(100% / 3 - 20px) !important;
+    display: inline-block;
+    margin: 4px 8px;
+}
+.imagePicker ion-button {
+    margin-top: 16px;
+    width: calc(100% - 40%);
+    margin: 16px 20% 10px 20%;
+}
+
+.PhotoName{
+    border-bottom: 1px solid #dddddd;
+    margin: 20px 10px;
+    width: calc(100% - 20px);
+}
+
+.listLabel{font-size: 24px;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    font-weight: bold;}

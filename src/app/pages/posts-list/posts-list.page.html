@@ -1,0 +1,23 @@
+
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    <ion-title>
+      Posts
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="posts != undefined">
+  <ion-card *ngFor="let post of posts" [routerLink]="['/','post', post.id]" routerDirection="forward" class="PostCard">
+    <ion-card-header>
+      <ion-card-title>{{post.title}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{post.body}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Post Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="post != undefined">
+  <div class="PostDetailsHolder">
+    <label class="PostTitle">
+      {{post.title}}
+    </label>
+    <div class="postBody">
+      {{post.body}}
+    </div>
+  </div>
+</ion-content>
